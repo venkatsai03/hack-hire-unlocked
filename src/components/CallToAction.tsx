@@ -15,11 +15,11 @@ const CallToAction: React.FC = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-          <Button variant="outline" className="bg-white text-purple-600 hover:bg-gray-100 border-white text-lg font-semibold px-8 py-6">
-            Join Our Pilot Program
+          <Button variant="outline" className="bg-white text-purple-600 hover:bg-gray-100 border-white text-lg font-semibold px-8 py-6" onClick={() => window.location.href = 'https://forms.gle/pM6J5hKFZGopcFXaA'}>
+            Join Our Pilot Program for Startups
           </Button>
           <Button variant="ghost" className="text-white hover:bg-purple-700 border border-white text-lg font-semibold px-8 py-6 flex items-center gap-2">
-            Contact Us <ArrowRight size={20} />
+          Join Our Pilot Program for Colleges <ArrowRight size={20} />
           </Button>
         </div>
         
