@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Check, Star, TrendingUp, Zap } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const benefits = [
   {
@@ -26,6 +27,8 @@ const benefits = [
 ];
 
 const ValuePropositions: React.FC = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <section id="why-choose" className="section-padding gradient-bg">
       <div className="max-w-7xl mx-auto">
@@ -57,24 +60,28 @@ const ValuePropositions: React.FC = () => {
         </div>
 
         <div className="mt-16 bg-white rounded-xl shadow-lg overflow-hidden">
-          <div className="p-8 text-center">
+          <div className="p-4 sm:p-6 md:p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Our Impact</h3>
-            <div className="flex justify-around gap-6 mt-8">
-              <div className="p-4">
-                <div className="text-4xl font-bold text-purple-500 mb-2">15+</div>
-                <p className="text-gray-600">Partner Colleges</p>
+            <div className="flex flex-col sm:flex-row flex-wrap justify-around gap-4 sm:gap-6 mt-8">
+              <div className="p-3 sm:p-4">
+                <div className="text-3xl sm:text-4xl font-bold text-purple-500 mb-2">15+</div>
+                <p className="text-gray-600 text-sm sm:text-base">Partner Colleges</p>
               </div>
-              <div className="p-4">
-                <div className="text-4xl font-bold text-purple-500 mb-2">10+</div>
-                <p className="text-gray-600">Startup Partners</p>
+              <div className="p-3 sm:p-4">
+                <div className="text-3xl sm:text-4xl font-bold text-purple-500 mb-2">10+</div>
+                <p className="text-gray-600 text-sm sm:text-base">Startup Partners</p>
               </div>
-              <div className="p-4">
-                <div className="text-4xl font-bold text-purple-500 mb-2">Coming Soon...</div>
-                <p className="text-gray-600">Student Participants</p>
+              <div className="p-3 sm:p-4">
+                <div className="text-3xl sm:text-4xl font-bold text-purple-500 mb-2">
+                  {isMobile ? "Coming..." : "Coming Soon..."}
+                </div>
+                <p className="text-gray-600 text-sm sm:text-base">Student Participants</p>
               </div>
-              <div className="p-4">
-                <div className="text-4xl font-bold text-purple-500 mb-2">Coming Soon...</div>
-                <p className="text-gray-600">Successful Hires</p>
+              <div className="p-3 sm:p-4">
+                <div className="text-3xl sm:text-4xl font-bold text-purple-500 mb-2">
+                  {isMobile ? "Coming..." : "Coming Soon..."}
+                </div>
+                <p className="text-gray-600 text-sm sm:text-base">Successful Hires</p>
               </div>
             </div>
           </div>
