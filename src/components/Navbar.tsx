@@ -27,9 +27,6 @@ const Navbar: React.FC = () => {
           <a href="#why-choose" className="text-gray-600 hover:text-purple-500 transition-colors">
             Why Choose Us
           </a>
-          <Link to="/testimonials" className="text-gray-600 hover:text-purple-500 transition-colors">
-            Testimonials
-          </Link>
           <a href="#stakeholders" className="text-gray-600 hover:text-purple-500 transition-colors">
             Stakeholders
           </a>
@@ -63,13 +60,6 @@ const Navbar: React.FC = () => {
             >
               Why Choose Us
             </a>
-            <Link
-              to="/testimonials"
-              className="text-gray-600 hover:text-purple-500 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
-            </Link>
             <a 
               href="#stakeholders" 
               className="text-gray-600 hover:text-purple-500 transition-colors"
