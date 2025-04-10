@@ -30,7 +30,9 @@ const Navbar: React.FC = () => {
           <a href="#stakeholders" className="text-gray-600 hover:text-purple-500 transition-colors">
             Stakeholders
           </a>
-          <Button className="btn-primary">Get Involved</Button>
+          <Button className="btn-primary" onClick={() => window.open('https://forms.gle/tq1GwvtFPy5cW2ZU9', '_blank')}>
+            Get Involved
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -67,7 +69,15 @@ const Navbar: React.FC = () => {
             >
               Stakeholders
             </a>
-            <Button className="btn-primary w-full">Get Involved</Button>
+            <Button 
+              className="btn-primary w-full" 
+              onClick={() => {
+                window.open('https://forms.gle/tq1GwvtFPy5cW2ZU9', '_blank');
+                setIsMenuOpen(false);
+              }}
+            >
+              Get Involved
+            </Button>
           </div>
         </div>
       )}

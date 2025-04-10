@@ -17,7 +17,10 @@ const Hero: React.FC = () => {
             Connect with skilled students based on real performance, not just resumes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button className="btn-primary flex items-center gap-2 text-lg">
+            <Button 
+              className="btn-primary flex items-center gap-2 text-lg"
+              onClick={() => window.open('https://forms.gle/tq1GwvtFPy5cW2ZU9', '_blank')}
+            >
               Get Involved <ArrowRight size={20} />
             </Button>
             <Button variant="outline" className="btn-outline text-lg">
