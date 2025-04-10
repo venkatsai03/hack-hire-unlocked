@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Testimonials from "./pages/Testimonials";
 import NotFound from "./pages/NotFound";
-import LogoExporter from "./components/LogoExporter";
 
 const queryClient = new QueryClient();
 
@@ -20,7 +19,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/logo-export" element={<LogoExporter />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

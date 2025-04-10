@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Download } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
@@ -33,10 +33,6 @@ const Navbar: React.FC = () => {
           <a href="#stakeholders" className="text-gray-600 hover:text-purple-500 transition-colors">
             Stakeholders
           </a>
-          <Link to="/logo-export" className="text-gray-600 hover:text-purple-500 transition-colors flex items-center gap-2">
-            <Download size={16} />
-            Logo
-          </Link>
           <Button className="btn-primary">Get Involved</Button>
         </div>
 
@@ -81,14 +77,6 @@ const Navbar: React.FC = () => {
             >
               Stakeholders
             </a>
-            <Link
-              to="/logo-export"
-              className="text-gray-600 hover:text-purple-500 transition-colors flex items-center gap-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <Download size={16} />
-              Download Logo
-            </Link>
             <Button className="btn-primary w-full">Get Involved</Button>
           </div>
         </div>
